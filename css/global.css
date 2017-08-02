@@ -1,18 +1,9 @@
-/*
-CANUCKINGTON POST STYLESHEET
-A SKYROCKET LABS FREE XHTML/CSS TEMPLATE
-http://www.skyrocketlabs.com
-fred@skyrocketlabs.com
-*/
-
-/* ARCHITECTURE */
-
 body {
-  font-family:Helvetica Neue,Helvetica,Arial,Utkal,sans-serif;
+  font-family: 'oxygen',Helvetica Neue,Helvetica,Arial,Utkal,sans-serif, ox;
   font-size: 90%;
   margin: 0;
   padding: 0;
-  background: #fff;
+  background: #000;
 }
 
 #top {
@@ -72,7 +63,7 @@ body {
     background: #fff;
     border: none;
     outline: none;
-    font-size: 16px;
+    font-size: 15px;
     padding: 10px;
 }
 
@@ -549,17 +540,47 @@ body {
   border: 0;
 }
 
+
 /* FORMS */
 #site-name-container {
     color: #fff;
     height: inherit;
-    padding: 10px;
-    font-family: 'oxygen',Arial, Helvetica, sans-serif,Cambria, Cochin, Georgia, Times, Times New Roman, serif
+    padding: 3px;
+    font-family: 'oxygen',Arial, Helvetica,
+      sans-serif,Cambria, Cochin, Georgia, Times, Times New Roman, serif;
+    font-size: 20px;
 }
 
 
 #nav-header {
   background: #000;
+  color: #bfbfbf;
+  height: 50px;
+}
+
+
+#nav-header #drop-down-menu {
+    position: absolute;
+    top: 50px;
+    right: 0;
+    margin-right: 50px;
+    width: 350px;
+    background: rgba(0, 0, 0, 0.7);
+    color: #fff;
+    height: 50px;
+}
+
+
+#nav-header #dividers {
+  margin: 10;
+}
+
+
+
+#nav-header .drop-down-menu ul li {
+  clear: both;
+  display: block;
+  margin: 0;
 }
 
 
@@ -574,12 +595,29 @@ body {
 
 
 #nav-header li {
-    margin-top: 15px;
+    margin-top: 3px;
+}
+
+
+#nav-header .menu-button {
+    background: none;
+    color: #6d6d6d;
+    font-size: 20px;
+    background: #fff;
+    border: none;
+    background: none;
+}
+
+
+
+#nav-header .menu-button:hover {
+      cursor: pointer;
 }
 
 
 #upload-cv {
-    color: #dc0000;
+    color: #bfbfbf;
+    font-size: 16px;
 }
 
 
@@ -589,6 +627,11 @@ body {
 
 
 
+#nav-header li a {
+  text-decoration: none;
+}
+
+
 #nav-header li a:hover {
     color: #6d6d6d;
     text-decoration: none;
@@ -596,15 +639,33 @@ body {
 
 
 #nav-header .img {
-    width: 30px;
-    height: 30px;
+    float: right;
+    width: 50px;
+    height: 50px;
     display: block;
-    margin: 0 auto;
+    margin: 20px;
+    margin-right: 50px;
     background-position: center;
     background-repeat: no-repeat;
     background-size: cover;
     border-radius: 100%;
-    margin-top: 10px;
+    border: solid thin #fff;
+}
+
+
+
+#nav-header #drop-down-menu-button {
+    float: right;
+    font-size: 17px;
+    margin: 10px;
+    color: #bfbfbf;
+}
+
+
+
+#nav-header #drop-down-menu-button:hover {
+    cursor: pointer;;
+    color: #ddd;
 }
 
 
@@ -616,6 +677,7 @@ body {
 
 #header-button {
     color: #bfbfbf;
+    font-size: 20px;
 }
 
 
@@ -632,7 +694,7 @@ body {
 .right {
     float: right;
     margin-right: 40px;
-    margin-top: 15px;
+    margin-top: 5px;
 }
 
 
@@ -717,4 +779,41 @@ body {
     font-family: 'oxygen',Helvetica,sans-serif;
     border: solid thin #eee;
     border-radius: 10px;
+}
+
+
+
+
+#newdirectgh-custom-alert-box {
+    width: 70%;
+    padding: 20px;
+    font-size: 20px;
+    background: #dc0000;
+    border-radius: 2px;
+}
+
+
+
+
+
+/*CSS LOADER*/
+.loader {
+    padding: 0;
+    margin: 20% auto;
+    width: 60px;
+}
+
+
+
+.loader img {
+  width: 60px;
+  margin: 0 auto;
+  padding: 0;
+}
+
+
+.loader p {
+  margin-top: 10px;
+  text-align: center;
+  font-size: 20px;
 }

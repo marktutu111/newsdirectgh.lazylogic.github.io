@@ -4,14 +4,16 @@
       <meta charset=UTF-8>
       <meta name="viewport" content="width=device-width, initial-scale=1">
       <meta name="google-site-verification" content="RdYEiQ2OWE21N1yVVcDnag0nk7ymlXt4Yx4ncPN7LXo" />
-      <title>NEWS DIRECT</title>
+      <meta name="description" content="News Direct Ghana is the number one source in ghana that delivers accurate news from all categories, Politics, Business..," />
+      <title>NEWS DIRECT GH</title>
+      <link rel="manifest" href="/manifest.json">
       <base href="/">
-
       <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+      <script src="https://cdnjs.cloudflare.com/ajax/libs/tether/1.4.0/js/tether.js"></script>
       <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-alpha.6/css/bootstrap.min.css" integrity="sha384-rwoIResjU2yc3z8GV/NPeZWAv56rSmLldC3R/AZzGRnGxQQKnKkoFVhFQhNUwEyJ" crossorigin="anonymous">
       <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-alpha.6/js/bootstrap.min.js" integrity="sha384-vBWWzlZJ8ea9aCX4pEW3rVHjgjt7zpkNpZk+02D9phzyeVkE+jo0ieGizqPLForn" crossorigin="anonymous"></script>
       <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
-      <link href="css/global.css" rel="stylesheet" type="text/css" media="screen" charset="utf-8" />
+      <link href="./css/global.css" rel="stylesheet" type="text/css" />
       <link href="https://fonts.googleapis.com/css?family=Oxygen" rel="stylesheet"/>
       <script src="https://cdnjs.cloudflare.com/ajax/libs/parse/1.9.2/parse.min.js"></script>
       <script src="https://cdnjs.cloudflare.com/ajax/libs/moment.js/2.18.1/moment.min.js"></script>
@@ -20,13 +22,15 @@
   <body>
 
     <app>
-        <div class="center-splash-screen">NEWS DIRECT</div>
+        <div class="loader">
+            <img src="../img/logo.png">
+            <p>loading</p>
+        </div>
     </app>
 
     <script>
         if( /Android|webOS|iPhone|iPad|iPod|BlackBerry|IEMobile|Opera Mini/i.test(navigator.userAgent) ) {
-              document.location = 'https://mobile.newsdirectgh.com';
-        }
+              document.location = 'https://mobile.newsdirectgh.com' }
     </script>
     <script async src="/main.bundle.js"></script>
 
